@@ -4,7 +4,7 @@
   "description": "A CLI for generating a file from a handlebars template",
   "scripts": {
     "build": "tsc",
-    "handlebars-rev": "handlebars-rev"
+    "hbs-rev": "hbs-rev"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "bin": {
-    "handlebars-rev": "./dist/index.js"
+    "hbs-rev": "./dist/index.js"
   },
   "bugs": {
     "url": "https://github.com/PrimalZed/handlebars-rev/issues"
