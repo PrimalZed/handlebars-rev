@@ -1,0 +1,38 @@
+{
+  "name": "handlebars-rev",
+  "version": "0.0.1",
+  "description": "A CLI for generating a file from a handlebars template",
+  "scripts": {
+    "build": "tsc",
+    "handlebars-rev": "handlebars-rev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrimalZed/handlebars-rev.git"
+  },
+  "author": "Primal Zed",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "bin": {
+    "handlebars-rev": "./dist/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/PrimalZed/handlebars-rev/issues"
+  },
+  "homepage": "https://github.com/PrimalZed/handlebars-rev#readme",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^5.0.0",
+    "glob": "^7.1.6",
+    "handlebars": "^4.7.4",
+    "handlebars-helper-repeat": "^2.0.0",
+    "handlebars-helpers": "^0.10.0",
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/node": "^13.11.0",
+    "nodemon": "^2.0.2",
+    "typescript": "^3.8.3"
+  }
+}
