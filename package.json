@@ -1,8 +1,11 @@
 {
   "name": "handlebars-rev",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A CLI for generating a file from a handlebars template.",
-  "keywords": ["handlebars", "cli"],
+  "keywords": [
+    "handlebars",
+    "cli"
+  ],
   "scripts": {
     "build": "tsc",
     "hbs-rev": "hbs-rev"
@@ -22,6 +25,7 @@
   },
   "homepage": "https://github.com/PrimalZed/handlebars-rev#readme",
   "dependencies": {
+    "camel-case": "^4.1.1",
     "chalk": "^4.0.0",
     "commander": "^5.0.0",
     "glob": "^7.1.6",

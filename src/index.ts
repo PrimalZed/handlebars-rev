@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { camelCase } from "camel-case";
 import { Command, createCommand } from "commander";
 import { promises as fsPromises } from "fs";
 import { concat, from, combineLatest } from "rxjs";
@@ -64,7 +65,8 @@ const registerPartials$ = from(partialMatchesPromise)
     mergeMap((match) => from(fsPromises.readFile(match, { encoding: "utf8" })).pipe(map((file) => ({ match, file })))),
     tap(({ match, file }) => {
       const fileName = match.split("/").slice(-1)[0];
-      const partialName = fileName.split(".")[0];
+      const fileNameSansExtension = fileName.split(".").slice(-1)[0];
+      const partialName = camelCase(fileNameSansExtension);
 
       Handlebars.registerPartial(partialName, file);
     })
